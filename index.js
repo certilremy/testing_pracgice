@@ -1,4 +1,8 @@
-const capitalize = (string) => string.toUpperCase();
+const testPractice = (() => {
+  const capitalize = (string) => string.toUpperCase();
+
+  return { capitalize };
+})();
 
 
-export default capitalize;
+export default testPractice;

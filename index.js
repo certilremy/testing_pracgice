@@ -1,4 +1,4 @@
-const testPractice = (() => {
+const workString = (() => {
   const capitalize = (string) => string.toUpperCase();
 
   const reverseString = (string) => string.split('').reverse().join('');
@@ -7,4 +7,4 @@ const testPractice = (() => {
 })();
 
 
-export default testPractice;
+export default workString;

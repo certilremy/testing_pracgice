@@ -1,9 +1,9 @@
-import testPractice from './index';
+import workString from './index';
 
 test('Capitalize string', () => {
-  expect(testPractice.capitalize('hello')).toEqual('HELLO');
+  expect(workString.capitalize('hello')).toEqual('HELLO');
 });
 
 test('Reverse string', () => {
-  expect(testPractice.reverseString('hello')).toEqual('olleh');
+  expect(workString.reverseString('hello')).toEqual('olleh');
 });

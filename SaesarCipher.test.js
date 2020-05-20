@@ -15,3 +15,7 @@ test('Work with negative number', () => {
 test('Decrypt the word back', () => {
   expect(saesarCipher.cipher('khoor, jrrg pruqlqj WVH', -3)).toEqual('hello, good morning TSE');
 });
+
+test('Work with ponctuation', () => {
+  expect(saesarCipher.cipher('¿hello good morning?', 5)).toEqual('¿mjqqt ltti rtwsnsl?');
+});

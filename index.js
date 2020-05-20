@@ -1,7 +1,9 @@
 const testPractice = (() => {
   const capitalize = (string) => string.toUpperCase();
 
-  return { capitalize };
+  const reverseString = (string) => string.split('').reverse().join('');
+
+  return { capitalize, reverseString };
 })();
 
 

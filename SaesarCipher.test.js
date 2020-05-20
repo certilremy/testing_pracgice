@@ -8,6 +8,10 @@ test('Work with muliple word', () => {
   expect(saesarCipher.cipher('hello, good morning TSE', 3)).toEqual('khoor, jrrg pruqlqj WVH');
 });
 
+test('wraps from Z to A', () => {
+  expect(saesarCipher.cipher('Z', 1)).toEqual('A');
+});
+
 test('Work with negative number', () => {
   expect(saesarCipher.cipher('good morning', -3)).toEqual('dlla jlokfkd');
 });

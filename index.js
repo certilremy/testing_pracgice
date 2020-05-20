@@ -6,5 +6,18 @@ const workString = (() => {
   return { capitalize, reverseString };
 })();
 
+const calculator = (() => {
+  const add = (num1, num2) => num1 + num2;
 
-export default workString;
+  const subtraction = (num1, num2) => num1 - num2;
+
+  const multiply = (num1, num2) => num1 * num2;
+
+  const divide = (num1, num2) => num1 / num2;
+
+  return {
+    add, subtraction, multiply, divide,
+  };
+})();
+
+export { workString, calculator };

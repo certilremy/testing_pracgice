@@ -25,7 +25,7 @@ const calculator = (() => {
 })();
 
 const saesarCipher = (() => {
-  const saesar = (str, position) => {
+  const cipher = (str, position) => {
     let code = position % 26;
 
     if (code < 0) {
@@ -59,7 +59,7 @@ const saesarCipher = (() => {
     return cipher;
   };
 
-  return { saesar };
+  return { cipher };
 })();
 
 // console.log(saesarCipher.saesar('hello', 4));

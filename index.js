@@ -34,7 +34,7 @@ const saesarCipher = (() => {
 
     const sentence = str.split('');
 
-    let cypher = '';
+    let cipher = '';
 
     for (let x = 0; x < sentence.length; x++) {
       let baseWorletter = sentence[x].charCodeAt(0);
@@ -54,14 +54,15 @@ const saesarCipher = (() => {
         }
       }
       const caracter = String.fromCharCode(baseWorletter);
-      cypher += caracter;
+      cipher += caracter;
     }
-    return cypher;
+    return cipher;
   };
 
   return { saesar };
 })();
-console.log(saesarCipher.saesar('hello', 4));
-console.log(saesarCipher.saesar('lipps', -4));
 
-// export { workString, calculator, saesarCipher };
+// console.log(saesarCipher.saesar('hello', 4));
+// console.log(saesarCipher.saesar('lipps', -4));
+
+export { workString, calculator, saesarCipher };

@@ -62,7 +62,27 @@ const saesarCipher = (() => {
   return { cipher };
 })();
 
-// console.log(saesarCipher.saesar('hello', 4));
-// console.log(saesarCipher.saesar('lipps', -4));
+const arrayAnalysis = (() => {
+  const analyze = (arr) => {
+    let average = 0;
+    const { length } = arr;
+    arr.forEach((element) => {
+      average += element;
+    });
+    average /= arr.length;
+    const min = arr.sort()[0];
 
-export { workString, calculator, saesarCipher };
+    const max = arr[length - 1];
+    return {
+      average,
+      min,
+      max,
+      length,
+    };
+  };
+  return { analyze };
+})();
+
+export {
+  workString, calculator, saesarCipher, arrayAnalysis,
+};

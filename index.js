@@ -1,6 +1,15 @@
 /* eslint-disable no-plusplus */
 const workString = (() => {
-  const capitalize = (string) => string.toUpperCase();
+  const capitalize = (string) => {
+    if (string === '') {
+      return 'empty string not allowed!';
+    }
+    if (typeof string !== 'string') {
+      return 'Only string allowed';
+    }
+
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
 
   const reverseString = (string) => string.split('').reverse().join('');
 

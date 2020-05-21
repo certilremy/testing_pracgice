@@ -11,7 +11,16 @@ const workString = (() => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
-  const reverseString = (string) => string.split('').reverse().join('');
+  const reverseString = (string) => {
+    if (string === '') {
+      return 'Empty string not allowed!';
+    }
+    if (typeof string !== 'string') {
+      return 'Only string allowed!';
+    }
+
+    return string.split('').reverse().join('');
+  };
 
   return { capitalize, reverseString };
 })();
